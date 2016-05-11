@@ -1,0 +1,7 @@
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Common.Core\bin\Debug\YYERP.Common.Core.exe.config
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Common.Core\bin\Debug\YYERP.Common.Core.exe
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Common.Core\bin\Debug\YYERP.Common.Core.pdb
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Common.Core\obj\Debug\YYERP.Common.Core.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Common.Core\obj\Debug\YYERP.Common.Core.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Common.Core\obj\Debug\YYERP.Common.Core.exe
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Common.Core\obj\Debug\YYERP.Common.Core.pdb

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E62C0F3A-C470-41F7-9A43-3C9E0C7A8E16}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShenXinDao</RootNamespace>
+    <AssemblyName>Dao</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\SX_IESS\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\SX_IESS\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreateTable.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="DataBaseExtend.cs" />
+    <Compile Include="DbschemaFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\ColumnSchema.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\ColumnSchemaCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\DatabaseSchema.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\DataObjectBase.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\DataObjectBaseCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\ExtendedProperty.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\ExtendedPropertyCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IColumnSchemaCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IColumnSchemaEnumerator.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IColumnSchemaList.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IDataObjectBaseCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IDataObjectBaseEnumerator.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IDataObjectBaseList.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IDbConnectionStringEditor.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IDbSchemaProvider.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IDbSchemaProviderCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IExtendedPropertyCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IExtendedPropertyEnumerator.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IExtendedPropertyList.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IIDbSchemaProviderCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IIDbSchemaProviderEnumerator.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IIDbSchemaProviderList.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IIndexSchemaCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IIndexSchemaEnumerator.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IIndexSchemaList.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IMemberColumnSchemaCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IMemberColumnSchemaEnumerator.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IMemberColumnSchemaList.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IndexSchema.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IndexSchemaCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\ISchemaObjectBaseCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\ISchemaObjectBaseEnumerator.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\ISchemaObjectBaseList.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\ITableKeySchemaCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\ITableKeySchemaEnumerator.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\ITableKeySchemaList.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\ITableSchemaCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\ITableSchemaEnumerator.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\ITableSchemaList.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IViewColumnSchemaCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IViewColumnSchemaEnumerator.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IViewColumnSchemaList.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IViewSchemaCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IViewSchemaEnumerator.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\IViewSchemaList.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\MemberColumnSchema.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\MemberColumnSchemaCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\PrimaryKeySchema.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\PropertyStateEnum.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\SchemaObjectBase.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\SchemaObjectBaseCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\SchemaUtility.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\SortExpression.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\TableDependancyComparer.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\TableKeySchema.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\TableKeySchemaCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\TableSchema.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\TableSchemaCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\TableSortOrder.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\TabularObjectBase.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\ViewColumnSchema.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\ViewColumnSchemaCollection.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\ViewSchema.cs" />
+    <Compile Include="ShemaDiscovery\ShemaProvider\ViewSchemaCollection.cs" />
+    <Compile Include="ShemaDiscovery\Sql\SafeDataReader.cs" />
+    <Compile Include="ShemaDiscovery\Sql\SqlBuilder.cs" />
+    <Compile Include="ShemaDiscovery\Sql\SqlFactory.cs" />
+    <Compile Include="ShemaDiscovery\Sql\SqlSchemaProvider.cs" />
+    <Compile Include="ShemaDiscovery\Sql\SqlScripts.cs" />
+    <Compile Include="ShemaDiscovery\Sql\SqlService.cs" />
+    <Compile Include="ShemaDiscovery\Sql\Utility.cs" />
+    <Compile Include="SqlDatabase.cs" />
+    <Compile Include="TransactionScopeConnections.cs" />
+    <Compile Include="UpdateBehavior.cs" />
+    <Compile Include="UserDataAcess.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KPIE.Core\KPIE.Core.csproj">
+      <Project>{1BCF4C5A-E5A4-44A3-A02B-4C9796D51BBA}</Project>
+      <Name>KPIE.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

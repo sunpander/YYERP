@@ -1,0 +1,10 @@
+F:\2014\wobo\tfs\SX_IESS\新源代码\SX_IESS\bin\Dao.dll
+F:\2014\wobo\tfs\SX_IESS\新源代码\SX_IESS\bin\Dao.pdb
+F:\2014\wobo\tfs\SX_IESS\新源代码\ShenXinDao\obj\Debug\ShenXinDao.csprojResolveAssemblyReference.cache
+F:\2014\wobo\tfs\SX_IESS\新源代码\ShenXinDao\obj\Debug\Dao.dll
+F:\2014\wobo\tfs\SX_IESS\新源代码\ShenXinDao\obj\Debug\Dao.pdb
+C:\Users\Administrator\Documents\GitHub\woboExtnet\SX_IESS\bin\Dao.dll
+C:\Users\Administrator\Documents\GitHub\woboExtnet\SX_IESS\bin\Dao.pdb
+C:\Users\Administrator\Documents\GitHub\woboExtnet\ShenXinDao\obj\Debug\ShenXinDao.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\woboExtnet\ShenXinDao\obj\Debug\Dao.dll
+C:\Users\Administrator\Documents\GitHub\woboExtnet\ShenXinDao\obj\Debug\Dao.pdb

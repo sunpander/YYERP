@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetBase" targetNamespace="http://tempuri.org/DataSetBase.xsd" xmlns:mstns="http://tempuri.org/DataSetBase.xsd" xmlns="http://tempuri.org/DataSetBase.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="yyerpConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="yyerpConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YYERP.DbTable.Properties.Settings.GlobalReference.Default.yyerpConnectionString" Provider="MySql.Data.MySqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="yyerpConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="yyerpConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YYERP.DbTable.Properties.Settings.GlobalReference.Default.yyerpConnectionString1" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetBase" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetBase" msprop:Generator_UserDSName="DataSetBase">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="bas_brand" msprop:Generator_TableClassName="bas_brandDataTable" msprop:Generator_TableVarName="tablebas_brand" msprop:Generator_RowChangedName="bas_brandRowChanged" msprop:Generator_TablePropName="bas_brand" msprop:Generator_RowDeletingName="bas_brandRowDeleting" msprop:Generator_RowChangingName="bas_brandRowChanging" msprop:Generator_RowEvHandlerName="bas_brandRowChangeEventHandler" msprop:Generator_RowDeletedName="bas_brandRowDeleted" msprop:Generator_RowClassName="bas_brandRow" msprop:Generator_UserTableName="bas_brand" msprop:Generator_RowEvArgName="bas_brandRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BrandId" msprop:Generator_ColumnVarNameInTable="columnBrandId" msprop:Generator_ColumnPropNameInRow="BrandId" msprop:Generator_ColumnPropNameInTable="BrandIdColumn" msprop:Generator_UserColumnName="BrandId" type="xs:int" />
+              <xs:element name="BrandName" msprop:Generator_ColumnVarNameInTable="columnBrandName" msprop:Generator_ColumnPropNameInRow="BrandName" msprop:Generator_ColumnPropNameInTable="BrandNameColumn" msprop:Generator_UserColumnName="BrandName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyId" msprop:Generator_ColumnVarNameInTable="columnCompanyId" msprop:Generator_ColumnPropNameInRow="CompanyId" msprop:Generator_ColumnPropNameInTable="CompanyIdColumn" msprop:Generator_UserColumnName="CompanyId" type="xs:int" minOccurs="0" />
+              <xs:element name="Pym" msprop:Generator_ColumnVarNameInTable="columnPym" msprop:Generator_ColumnPropNameInRow="Pym" msprop:Generator_ColumnPropNameInTable="PymColumn" msprop:Generator_UserColumnName="Pym" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrderNum" msprop:Generator_ColumnVarNameInTable="columnOrderNum" msprop:Generator_ColumnPropNameInRow="OrderNum" msprop:Generator_ColumnPropNameInTable="OrderNumColumn" msprop:Generator_UserColumnName="OrderNum" type="xs:int" minOccurs="0" />
+              <xs:element name="Hiden" msprop:Generator_ColumnVarNameInTable="columnHiden" msprop:Generator_ColumnPropNameInRow="Hiden" msprop:Generator_ColumnPropNameInTable="HidenColumn" msprop:Generator_UserColumnName="Hiden" type="xs:byte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vw_sec_user" msprop:Generator_TableClassName="vw_sec_userDataTable" msprop:Generator_TableVarName="tablevw_sec_user" msprop:Generator_TablePropName="vw_sec_user" msprop:Generator_RowDeletingName="vw_sec_userRowDeleting" msprop:Generator_RowChangingName="vw_sec_userRowChanging" msprop:Generator_RowEvHandlerName="vw_sec_userRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_sec_userRowDeleted" msprop:Generator_UserTableName="vw_sec_user" msprop:Generator_RowChangedName="vw_sec_userRowChanged" msprop:Generator_RowEvArgName="vw_sec_userRowChangeEvent" msprop:Generator_RowClassName="vw_sec_userRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UID" msprop:Generator_ColumnVarNameInTable="columnUID" msprop:Generator_ColumnPropNameInRow="UID" msprop:Generator_ColumnPropNameInTable="UIDColumn" msprop:Generator_UserColumnName="UID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyId" msprop:Generator_ColumnVarNameInTable="columnCompanyId" msprop:Generator_ColumnPropNameInRow="CompanyId" msprop:Generator_ColumnPropNameInTable="CompanyIdColumn" msprop:Generator_UserColumnName="CompanyId" type="xs:int" minOccurs="0" />
+              <xs:element name="RoleId" msprop:Generator_ColumnVarNameInTable="columnRoleId" msprop:Generator_ColumnPropNameInRow="RoleId" msprop:Generator_ColumnPropNameInTable="RoleIdColumn" msprop:Generator_UserColumnName="RoleId" type="xs:int" minOccurs="0" />
+              <xs:element name="PWD" msprop:Generator_ColumnVarNameInTable="columnPWD" msprop:Generator_ColumnPropNameInRow="PWD" msprop:Generator_ColumnPropNameInTable="PWDColumn" msprop:Generator_UserColumnName="PWD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WorkNumber" msdata:Caption="工号" msprop:Generator_ColumnVarNameInTable="columnWorkNumber" msprop:Generator_ColumnPropNameInRow="WorkNumber" msprop:Generator_ColumnPropNameInTable="WorkNumberColumn" msprop:Generator_UserColumnName="WorkNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msdata:Caption="描述" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AddTime" msprop:Generator_ColumnVarNameInTable="columnAddTime" msprop:Generator_ColumnPropNameInRow="AddTime" msprop:Generator_ColumnPropNameInTable="AddTimeColumn" msprop:Generator_UserColumnName="AddTime" type="xs:byte" minOccurs="0" />
+              <xs:element name="Disabled" msprop:Generator_ColumnVarNameInTable="columnDisabled" msprop:Generator_ColumnPropNameInRow="Disabled" msprop:Generator_ColumnPropNameInTable="DisabledColumn" msprop:Generator_UserColumnName="Disabled" type="xs:byte" minOccurs="0" />
+              <xs:element name="RoleCompanyId" msprop:Generator_ColumnVarNameInTable="columnRoleCompanyId" msprop:Generator_ColumnPropNameInRow="RoleCompanyId" msprop:Generator_ColumnPropNameInTable="RoleCompanyIdColumn" msprop:Generator_UserColumnName="RoleCompanyId" type="xs:int" minOccurs="0" />
+              <xs:element name="RoleName" msprop:Generator_ColumnVarNameInTable="columnRoleName" msprop:Generator_ColumnPropNameInRow="RoleName" msprop:Generator_ColumnPropNameInTable="RoleNameColumn" msprop:Generator_UserColumnName="RoleName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentCompanyId" msprop:Generator_ColumnVarNameInTable="columnParentCompanyId" msprop:Generator_ColumnPropNameInRow="ParentCompanyId" msprop:Generator_ColumnPropNameInTable="ParentCompanyIdColumn" msprop:Generator_UserColumnName="ParentCompanyId" type="xs:int" minOccurs="0" />
+              <xs:element name="TopCompanyId" msprop:Generator_ColumnVarNameInTable="columnTopCompanyId" msprop:Generator_ColumnPropNameInRow="TopCompanyId" msprop:Generator_ColumnPropNameInTable="TopCompanyIdColumn" msprop:Generator_UserColumnName="TopCompanyId" type="xs:int" minOccurs="0" />
+              <xs:element name="UseWarehouse" msprop:Generator_ColumnVarNameInTable="columnUseWarehouse" msprop:Generator_ColumnPropNameInRow="UseWarehouse" msprop:Generator_ColumnPropNameInTable="UseWarehouseColumn" msprop:Generator_UserColumnName="UseWarehouse" type="xs:byte" minOccurs="0" />
+              <xs:element name="ThirdSystem" msprop:Generator_ColumnVarNameInTable="columnThirdSystem" msprop:Generator_ColumnPropNameInRow="ThirdSystem" msprop:Generator_ColumnPropNameInTable="ThirdSystemColumn" msprop:Generator_UserColumnName="ThirdSystem" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShortName" msdata:Caption="昵称" msprop:Generator_ColumnVarNameInTable="columnShortName" msprop:Generator_ColumnPropNameInRow="ShortName" msprop:Generator_ColumnPropNameInTable="ShortNameColumn" msprop:Generator_UserColumnName="ShortName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyMode" msprop:Generator_ColumnVarNameInTable="columnCompanyMode" msprop:Generator_ColumnPropNameInRow="CompanyMode" msprop:Generator_ColumnPropNameInTable="CompanyModeColumn" msprop:Generator_UserColumnName="CompanyMode" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:bas_brand" />
+      <xs:field xpath="mstns:BrandId" />
+    </xs:unique>
+    <xs:unique name="vw_sec_user_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vw_sec_user" />
+      <xs:field xpath="mstns:UID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

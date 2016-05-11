@@ -1,0 +1,10 @@
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.ERP\bin\Debug\YYERP.ERP.exe.config
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.ERP\bin\Debug\YYERP.ERP.exe
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.ERP\bin\Debug\YYERP.ERP.pdb
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.ERP\obj\Debug\YYERP.ERP.FormZhangtao.resources
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.ERP\obj\Debug\YYERP.ERP.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.ERP\obj\Debug\YYERP.ERP.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.ERP\obj\Debug\YYERP.ERP.exe
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.ERP\obj\Debug\YYERP.ERP.pdb
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.ERP\obj\Debug\YYERP.ERP.FormZhangtaoChange.resources
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.ERP\obj\Debug\YYERP.ERP.csprojResolveAssemblyReference.cache

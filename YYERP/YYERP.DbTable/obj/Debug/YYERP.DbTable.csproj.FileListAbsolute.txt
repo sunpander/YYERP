@@ -1,0 +1,8 @@
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.DbTable\bin\Debug\YYERP.DbTable.exe.config
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.DbTable\bin\Debug\YYERP.DbTable.exe
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.DbTable\bin\Debug\YYERP.DbTable.pdb
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.DbTable\obj\Debug\YYERP.DbTable.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.DbTable\obj\Debug\YYERP.DbTable.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.DbTable\obj\Debug\YYERP.DbTable.exe
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.DbTable\obj\Debug\YYERP.DbTable.pdb
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.DbTable\obj\Debug\YYERP.DbTable.Form1.resources

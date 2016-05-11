@@ -1,0 +1,11 @@
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP\obj\Debug\YYERP.Form1.resources
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP\obj\Debug\YYERP.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP\obj\Debug\YYERP.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP\bin\Debug\YYERP.exe.config
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP\bin\Debug\YYERP.exe
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP\bin\Debug\YYERP.pdb
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP\obj\Debug\YYERP.exe
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP\obj\Debug\YYERP.pdb
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP\obj\Debug\YYERP.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP\bin\Debug\Dao.dll
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP\bin\Debug\Dao.pdb
