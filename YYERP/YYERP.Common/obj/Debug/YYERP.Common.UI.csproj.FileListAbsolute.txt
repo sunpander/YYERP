@@ -1,8 +1,0 @@
-C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Common\bin\Debug\YYERP.Common.exe.config
-C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Common\bin\Debug\YYERP.Common.exe
-C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Common\bin\Debug\YYERP.Common.pdb
-C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Common\obj\Debug\YYERP.Common.Form1.resources
-C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Common\obj\Debug\YYERP.Common.Properties.Resources.resources
-C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Common\obj\Debug\YYERP.Common.UI.csproj.GenerateResource.Cache
-C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Common\obj\Debug\YYERP.Common.exe
-C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Common\obj\Debug\YYERP.Common.pdb

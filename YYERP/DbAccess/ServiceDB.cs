@@ -57,7 +57,28 @@ namespace DbAccess
             fields = fields.Remove(fields.Length - 1);
             for (int i = 0; i < fieldNo; i++)
             {
-                values += string.Format("'{0}',", dr[dt.Columns[i].ColumnName]);
+
+                if (dt.Columns[i].DataType == typeof(String))
+                {
+                    values += string.Format("'{0}',", dr[dt.Columns[i].ColumnName]);
+                }
+                else if (dt.Columns[i].DataType == typeof(Int32) || dt.Columns[i].DataType == typeof(System.SByte))
+                {
+                    if (dr[dt.Columns[i].ColumnName]==null || string.IsNullOrEmpty(dr[dt.Columns[i].ColumnName].ToString()))
+                    {
+                        values +=  "NULL," ;
+                    }
+                    else
+                    {
+                        values += string.Format("{0},", dr[dt.Columns[i].ColumnName]);
+                    }
+                }
+                else
+                {
+                    global::System.Windows.Forms.MessageBox.Show("insert new type" + dt.Columns[i].DataType.ToString());
+                    //setFields += string.Format(@" {0}='{1}' ,", mcs.ColumnName, dr[mcs.ColumnName].ToString());
+                }
+               // values += string.Format("'{0}',", dr[dt.Columns[i].ColumnName]);
             }
             values = values.Remove(values.Length - 1);
             string sql = string.Format(@"INSERT INTO {0} ({1}) values ({2})", dt.TableName, fields, values);
@@ -73,16 +94,28 @@ namespace DbAccess
             return ExecuteNonSql(listSql);
 
         }
-
+        public static int ExecuteNonSql(string strSql,Dictionary<string, object> parameters)
+        {
+            using (IDatabase db = DatabaseFactory.CreateDatabase())
+            {
+                return db.ExecuteNonQuery(strSql,parameters);
+            }
+        }
+        public static int ExecuteNonSql(string strSql)
+        {
+            using (IDatabase db = DatabaseFactory.CreateDatabase())
+            {
+                return db.ExecuteNonQuery(strSql);
+            }
+        }
         public static int ExecuteNonSql(List<string> strSql)
         {
             int rowCount = 0;
             for (int i = 0; i < strSql.Count; i++)
             {
-                using (IDatabase db = DatabaseFactory.CreateDatabase())
-                {
-                    rowCount += db.ExecuteNonQuery(strSql[i]) ; //查询
-                }
+
+                rowCount += ExecuteNonSql(strSql[i]); //查询
+                
             }
             return rowCount;
         }
@@ -125,7 +158,32 @@ namespace DbAccess
             condition += (idColName + "='" + dr[idColName].ToString() + "'");
             foreach (DataColumn mcs in dr.Table.Columns)
             {
-                setFields += string.Format(@" {0}='{1}' ,", mcs.ColumnName, dr[mcs.ColumnName].ToString());
+                if (mcs.DataType == typeof(String))
+                {
+                    setFields += string.Format(@" {0}='{1}' ,", mcs.ColumnName, dr[mcs.ColumnName].ToString());
+                }
+                else if (mcs.DataType == typeof(Int32) || mcs.DataType == typeof(System.SByte))
+                {
+
+
+                    if (dr[mcs.ColumnName] == null || string.IsNullOrEmpty(dr[mcs.ColumnName].ToString()))
+                    {
+                        
+                        setFields += string.Format(@" {0}=NULL,", mcs.ColumnName );
+                    }
+                    else
+                    {
+                        setFields += string.Format(@" {0}={1} ,", mcs.ColumnName, dr[mcs.ColumnName].ToString());
+                    }
+
+
+                   
+                }
+                else
+                {
+                    global::System.Windows.Forms.MessageBox.Show("new type"+mcs.DataType.ToString());
+                    //setFields += string.Format(@" {0}='{1}' ,", mcs.ColumnName, dr[mcs.ColumnName].ToString());
+                }
             }
             setFields = setFields.Remove(setFields.Length - 1);
             string sql = string.Format(@"UPDATE {0} SET {1} WHERE {2}", dr.Table.TableName, setFields, condition);
@@ -153,29 +211,6 @@ namespace DbAccess
                 return db.ExecuteQuery(strSql); //查询
             }
         }
-
-        //public static DataSet ExecuteSql(List<string> strSql, string server)
-        //{
-        //    if (String.IsNullOrEmpty(DatabaseFactory.ConnectionString))
-        //    {
-        //        int sp = server.IndexOf(";");
-        //        string type = server.Substring(5, sp - 5);
-        //        int sp1 = server.IndexOf(";", sp + 1);
-        //        string datasource = server.Substring(sp + 10, sp1 - sp - 10);
-        //        int sp2 = server.IndexOf(";", sp1 + 1);
-        //        string username = server.Substring(sp1 + 10, sp2 - sp1 - 10);
-        //        string password = server.Substring(sp2 + 10);
-        //        DatabaseFactory.ConnectionString = Utiltity.GetConnectionString(type, datasource, username, password);
-        //    }
-        //    DataSet ds = new DataSet();
-        //    for (int i = 0; i < strSql.Count; i++)
-        //    {
-        //        using (IDatabase db = DatabaseFactory.CreateDatabase())
-        //        {
-        //            ds.Tables.Add(db.ExecuteQuery(strSql[i])); //查询
-        //        }
-        //    }
-        //    return ds;
-        //}
+ 
     }
 }

@@ -22,3 +22,4 @@ C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Bin\Plat.exe.config
 C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Bin\Plat.exe
 C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Bin\Plat.pdb
 C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\Plat\obj\Debug\Plat.FormUserDetail.resources
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\Plat\obj\Debug\Plat.MainLogoPanel.resources

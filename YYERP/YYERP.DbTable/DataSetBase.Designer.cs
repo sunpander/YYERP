@@ -59,8 +59,8 @@ namespace YYERP.DbTable {
                 if ((ds.Tables["bas_brand"] != null)) {
                     base.Tables.Add(new bas_brandDataTable(ds.Tables["bas_brand"]));
                 }
-                if ((ds.Tables["vw_sec_user"] != null)) {
-                    base.Tables.Add(new vw_sec_userDataTable(ds.Tables["vw_sec_user"]));
+                if ((ds.Tables["bas_user"] != null)) {
+                    base.Tables.Add(new vw_sec_userDataTable(ds.Tables["bas_user"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -94,7 +94,7 @@ namespace YYERP.DbTable {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public vw_sec_userDataTable vw_sec_user {
+        public vw_sec_userDataTable bas_user {
             get {
                 return this.tablevw_sec_user;
             }
@@ -170,8 +170,8 @@ namespace YYERP.DbTable {
                 if ((ds.Tables["bas_brand"] != null)) {
                     base.Tables.Add(new bas_brandDataTable(ds.Tables["bas_brand"]));
                 }
-                if ((ds.Tables["vw_sec_user"] != null)) {
-                    base.Tables.Add(new vw_sec_userDataTable(ds.Tables["vw_sec_user"]));
+                if ((ds.Tables["bas_user"] != null)) {
+                    base.Tables.Add(new vw_sec_userDataTable(ds.Tables["bas_user"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -212,7 +212,7 @@ namespace YYERP.DbTable {
                     this.tablebas_brand.InitVars();
                 }
             }
-            this.tablevw_sec_user = ((vw_sec_userDataTable)(base.Tables["vw_sec_user"]));
+            this.tablevw_sec_user = ((vw_sec_userDataTable)(base.Tables["bas_user"]));
             if ((initTable == true)) {
                 if ((this.tablevw_sec_user != null)) {
                     this.tablevw_sec_user.InitVars();
@@ -242,7 +242,7 @@ namespace YYERP.DbTable {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializevw_sec_user() {
+        private bool ShouldSerializebas_user() {
             return false;
         }
         
@@ -681,7 +681,7 @@ namespace YYERP.DbTable {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public vw_sec_userDataTable() {
-                this.TableName = "vw_sec_user";
+                this.TableName = "bas_user";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -1021,6 +1021,12 @@ namespace YYERP.DbTable {
                 this.columnThirdSystem.MaxLength = 256;
                 this.columnShortName.Caption = "昵称";
                 this.columnShortName.MaxLength = 50;
+                this.ExtendedProperties.Add("Generator_RowClassName", "vw_sec_userRow");
+                this.ExtendedProperties.Add("Generator_RowEvArgName", "vw_sec_userRowChangeEvent");
+                this.ExtendedProperties.Add("Generator_RowEvHandlerName", "vw_sec_userRowChangeEventHandler");
+                this.ExtendedProperties.Add("Generator_TableClassName", "vw_sec_userDataTable");
+                this.ExtendedProperties.Add("Generator_TableVarName", "tablevw_sec_user");
+                this.ExtendedProperties.Add("Generator_UserTableName", "bas_user");
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1346,7 +1352,7 @@ namespace YYERP.DbTable {
                         return ((int)(this[this.tablevw_sec_user.CompanyIdColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“vw_sec_user”中列“CompanyId”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“bas_user”中列“CompanyId”的值为 DBNull。", e);
                     }
                 }
                 set {
@@ -1362,7 +1368,7 @@ namespace YYERP.DbTable {
                         return ((int)(this[this.tablevw_sec_user.RoleIdColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“vw_sec_user”中列“RoleId”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“bas_user”中列“RoleId”的值为 DBNull。", e);
                     }
                 }
                 set {
@@ -1378,7 +1384,7 @@ namespace YYERP.DbTable {
                         return ((string)(this[this.tablevw_sec_user.PWDColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“vw_sec_user”中列“PWD”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“bas_user”中列“PWD”的值为 DBNull。", e);
                     }
                 }
                 set {
@@ -1394,7 +1400,7 @@ namespace YYERP.DbTable {
                         return ((string)(this[this.tablevw_sec_user.WorkNumberColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“vw_sec_user”中列“WorkNumber”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“bas_user”中列“WorkNumber”的值为 DBNull。", e);
                     }
                 }
                 set {
@@ -1410,7 +1416,7 @@ namespace YYERP.DbTable {
                         return ((string)(this[this.tablevw_sec_user.DescriptionColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“vw_sec_user”中列“Description”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“bas_user”中列“Description”的值为 DBNull。", e);
                     }
                 }
                 set {
@@ -1426,7 +1432,7 @@ namespace YYERP.DbTable {
                         return ((sbyte)(this[this.tablevw_sec_user.AddTimeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“vw_sec_user”中列“AddTime”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“bas_user”中列“AddTime”的值为 DBNull。", e);
                     }
                 }
                 set {
@@ -1442,7 +1448,7 @@ namespace YYERP.DbTable {
                         return ((sbyte)(this[this.tablevw_sec_user.DisabledColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“vw_sec_user”中列“Disabled”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“bas_user”中列“Disabled”的值为 DBNull。", e);
                     }
                 }
                 set {
@@ -1458,7 +1464,7 @@ namespace YYERP.DbTable {
                         return ((int)(this[this.tablevw_sec_user.RoleCompanyIdColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“vw_sec_user”中列“RoleCompanyId”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“bas_user”中列“RoleCompanyId”的值为 DBNull。", e);
                     }
                 }
                 set {
@@ -1474,7 +1480,7 @@ namespace YYERP.DbTable {
                         return ((string)(this[this.tablevw_sec_user.RoleNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“vw_sec_user”中列“RoleName”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“bas_user”中列“RoleName”的值为 DBNull。", e);
                     }
                 }
                 set {
@@ -1490,7 +1496,7 @@ namespace YYERP.DbTable {
                         return ((string)(this[this.tablevw_sec_user.CompanyNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“vw_sec_user”中列“CompanyName”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“bas_user”中列“CompanyName”的值为 DBNull。", e);
                     }
                 }
                 set {
@@ -1506,7 +1512,7 @@ namespace YYERP.DbTable {
                         return ((int)(this[this.tablevw_sec_user.ParentCompanyIdColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“vw_sec_user”中列“ParentCompanyId”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“bas_user”中列“ParentCompanyId”的值为 DBNull。", e);
                     }
                 }
                 set {
@@ -1522,7 +1528,7 @@ namespace YYERP.DbTable {
                         return ((int)(this[this.tablevw_sec_user.TopCompanyIdColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“vw_sec_user”中列“TopCompanyId”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“bas_user”中列“TopCompanyId”的值为 DBNull。", e);
                     }
                 }
                 set {
@@ -1538,7 +1544,7 @@ namespace YYERP.DbTable {
                         return ((sbyte)(this[this.tablevw_sec_user.UseWarehouseColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“vw_sec_user”中列“UseWarehouse”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“bas_user”中列“UseWarehouse”的值为 DBNull。", e);
                     }
                 }
                 set {
@@ -1554,7 +1560,7 @@ namespace YYERP.DbTable {
                         return ((string)(this[this.tablevw_sec_user.ThirdSystemColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“vw_sec_user”中列“ThirdSystem”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“bas_user”中列“ThirdSystem”的值为 DBNull。", e);
                     }
                 }
                 set {
@@ -1570,7 +1576,7 @@ namespace YYERP.DbTable {
                         return ((string)(this[this.tablevw_sec_user.ShortNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“vw_sec_user”中列“ShortName”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“bas_user”中列“ShortName”的值为 DBNull。", e);
                     }
                 }
                 set {
@@ -1586,7 +1592,7 @@ namespace YYERP.DbTable {
                         return ((int)(this[this.tablevw_sec_user.CompanyModeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“vw_sec_user”中列“CompanyMode”的值为 DBNull。", e);
+                        throw new global::System.Data.StrongTypingException("表“bas_user”中列“CompanyMode”的值为 DBNull。", e);
                     }
                 }
                 set {

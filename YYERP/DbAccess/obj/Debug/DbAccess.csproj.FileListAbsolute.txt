@@ -16,3 +16,4 @@ C:\Users\Administrator\Documents\GitHub\Client\EP\DbAccess.pdb
 C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\DbAccess\obj\Debug\DbAccess.pdb
 C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Bin\DbAccess.dll
 C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Bin\DbAccess.pdb
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\DbAccess\obj\Debug\DbAccess.csprojResolveAssemblyReference.cache

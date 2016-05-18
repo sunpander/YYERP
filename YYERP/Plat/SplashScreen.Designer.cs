@@ -47,7 +47,7 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Text = "Copyright © 1998-2016 啦啦啦 inc.\r\nAll Rights Reserved";
+            this.labelControl1.Text = "上海佰点网络科技有限公司 版权所有";
             // 
             // labelControl2
             // 

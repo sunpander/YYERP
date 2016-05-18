@@ -23,7 +23,7 @@ namespace Plat
                 if (dtDetail.Rows.Count == 0)
                 {
                     vw_sec_userBindingSource.EndEdit();
-                    DataTable dtAdd = dataSetBase.vw_sec_user.AsDataView().ToTable();
+                    DataTable dtAdd = dataSetBase.bas_user.AsDataView().ToTable();
                     DbAccess.ServiceDB.InsertRow(dtAdd);
                 }
                 else
@@ -32,11 +32,13 @@ namespace Plat
 
                     DbAccess.ServiceDB.UpdateRow(dtDetail, "uid");
                 }
+                DialogResult = System.Windows.Forms.DialogResult.OK;
                 this.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
+               // DialogResult = System.Windows.Forms.DialogResult.Cancel;
             }
      
         }

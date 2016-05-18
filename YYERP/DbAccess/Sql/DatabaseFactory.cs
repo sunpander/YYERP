@@ -80,7 +80,23 @@ namespace DbAccess.Sql
             }
             return CreateDatabase(type);
         }
-        public static string ConnectionString = "";
+        private static string _conStr = "";
+        public static string ConnectionString
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_conStr))
+                {
+                    _conStr = GetConnectionString();
+                }
+                return _conStr;
+            }
+            set
+            {
+                _conStr = value;
+
+            }
+        }
         public static DatabaseType GetDatabaseType()
         {
             if (type != null)

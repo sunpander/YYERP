@@ -24,7 +24,7 @@ namespace Plat
         {
             try
             {
-                DataTable dt = DbAccess.ServiceDB.ExecuteSql("select * from vw_sec_user");
+                DataTable dt = DbAccess.ServiceDB.ExecuteSql("select * from bas_user");
                 gridControl1.DataSource = dt;
                 gridView1.PopulateColumns();
             }
@@ -59,7 +59,7 @@ namespace Plat
 
                 DataTable dataSource = (gridControl1.DataSource as DataTable);
                 DataTable dtDel = dataSource.Clone();
-                dtDel.TableName = "vw_sec_user";
+                dtDel.TableName = "bas_user";
                 int[] rows = gridView1.GetSelectedRows();
 
                 for (int i = 0; i < rows.Length; i++)
@@ -89,7 +89,7 @@ namespace Plat
  
                DataTable dataSource =  (gridControl1.DataSource as DataTable);
                DataTable dtDel = dataSource.Clone();
-               dtDel.TableName = "vw_sec_user";
+               dtDel.TableName = "bas_user";
                int[] rows = gridView1.GetSelectedRows();
               
                for (int i = 0; i < rows.Length; i++)

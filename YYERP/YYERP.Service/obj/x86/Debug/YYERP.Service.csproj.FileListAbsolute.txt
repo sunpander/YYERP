@@ -5,3 +5,7 @@ C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Service\obj\x86\Debug\
 C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Service\obj\x86\Debug\YYERP.Service.csproj.GenerateResource.Cache
 C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Service\obj\x86\Debug\YYERP.Service.exe
 C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Service\obj\x86\Debug\YYERP.Service.pdb
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Service\obj\x86\Debug\YYERP.Service.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Service\bin\Debug\DbAccess.dll
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Service\bin\Debug\System.Data.SQLite.dll
+C:\Users\Administrator\Documents\GitHub\YYERP\YYERP\YYERP.Service\bin\Debug\DbAccess.pdb

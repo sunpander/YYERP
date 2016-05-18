@@ -21,7 +21,7 @@ namespace YYERP
         {
             try
             {
-                YYERP.Dao.UserDataAccess.ExecuteDataSet("select * from bas_brand");
+                //YYERP.Dao.UserDataAccess.ExecuteDataSet("select * from bas_brand");
             }
             catch (Exception ex)
             {

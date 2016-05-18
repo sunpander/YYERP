@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainLogoPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MainLogoPanel.designer.cs">
+      <DependentUpon>MainLogoPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCompany.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,9 @@
     <Compile Include="SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MainLogoPanel.resx">
+      <DependentUpon>MainLogoPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCompany.resx">
       <DependentUpon>FormCompany.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +165,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Launch.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\mainLogo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

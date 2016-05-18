@@ -39,7 +39,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="vw_sec_user" msprop:Generator_TableClassName="vw_sec_userDataTable" msprop:Generator_TableVarName="tablevw_sec_user" msprop:Generator_TablePropName="vw_sec_user" msprop:Generator_RowDeletingName="vw_sec_userRowDeleting" msprop:Generator_RowChangingName="vw_sec_userRowChanging" msprop:Generator_RowEvHandlerName="vw_sec_userRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_sec_userRowDeleted" msprop:Generator_UserTableName="vw_sec_user" msprop:Generator_RowChangedName="vw_sec_userRowChanged" msprop:Generator_RowEvArgName="vw_sec_userRowChangeEvent" msprop:Generator_RowClassName="vw_sec_userRow">
+        <xs:element name="bas_user" msprop:Generator_TableClassName="vw_sec_userDataTable" msprop:Generator_TableVarName="tablevw_sec_user" msprop:Generator_TablePropName="bas_user" msprop:Generator_RowDeletingName="vw_sec_userRowDeleting" msprop:Generator_RowChangingName="vw_sec_userRowChanging" msprop:Generator_RowEvHandlerName="vw_sec_userRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_sec_userRowDeleted" msprop:Generator_UserTableName="bas_user" msprop:Generator_RowChangedName="vw_sec_userRowChanged" msprop:Generator_RowEvArgName="vw_sec_userRowChangeEvent" msprop:Generator_RowClassName="vw_sec_userRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="UID" msprop:Generator_ColumnVarNameInTable="columnUID" msprop:Generator_ColumnPropNameInRow="UID" msprop:Generator_ColumnPropNameInTable="UIDColumn" msprop:Generator_UserColumnName="UID">
@@ -117,7 +117,7 @@
       <xs:field xpath="mstns:BrandId" />
     </xs:unique>
     <xs:unique name="vw_sec_user_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:vw_sec_user" />
+      <xs:selector xpath=".//mstns:bas_user" />
       <xs:field xpath="mstns:UID" />
     </xs:unique>
   </xs:element>

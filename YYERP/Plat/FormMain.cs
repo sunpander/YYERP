@@ -7,14 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
 namespace Plat
 {
     public partial class FormMain : DevExpress.XtraEditors.XtraForm
     {
+        private MainLogoPanel efPanel1;
         public FormMain()
         {
             InitializeComponent();
+            //efPanel1 = new MainLogoPanel();
+            //this.Container.Add(efPanel1);
+            //efPanel1.Dock = DockStyle.Fill;
+
+            this.efPanel1 = new MainLogoPanel(this.components);
+            this.Controls.Add(efPanel1);
+            efPanel1.Dock = DockStyle.Fill;
+            this.efPanel1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.efPanel1.FireScrollEventOnMouseWheel = true;
+            efPanel1.Visible = true;
 
             this.xtraTabbedMdiManager1.MouseUp += new MouseEventHandler(xtraTabbedMdiManager1_Event);
             this.xtraTabbedMdiManager1.SelectedPageChanged += new System.EventHandler(this.EPMDIShell_MdiChildActivate);
@@ -24,7 +36,8 @@ namespace Plat
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
+            //设置时间
+            timer1.Start();
         }
  
 
@@ -66,19 +79,16 @@ namespace Plat
 
         private void xtraTabbedMdiManager1_PageAdded(object sender, DevExpress.XtraTabbedMdi.MdiTabPageEventArgs e)
         {
-            //if (this.efPanel1.Visible)
-            //{
-            //    this.efPanel1.Visible = false;
-            //}
+            if (this.efPanel1.Visible)
+            {
+                this.efPanel1.Visible = false;
+            }
 
             //if (e.Page.MdiChild is EF.EFFormMain)
             //{
-            //    addToolBarButtonEnableEvent(e);//添加工具条按钮是否可用事件
-            //    setToolBarButtonEnable();  //设置工具条按钮是否可用
             //    ((EF.EFFormMain)e.Page.MdiChild).EFMsgInfoChanged += new EF.EFFormMain.EFLogEvent(EPMDIShell2_EFMsgInfoChanged);
             //    //修改提示信息图标事件
             //    ((EF.EFFormMain)e.Page.MdiChild).EFMsgIconChanged += new EF.EFFormMain.EFLogEvent(EPMainFrame_EFMsgIconChanged);
-
             //}
         }
 
@@ -91,16 +101,10 @@ namespace Plat
             //    ((EF.EFFormMain)e.Page.MdiChild).EFMsgIconChanged -= new EF.EFFormMain.EFLogEvent(EPMainFrame_EFMsgIconChanged);
             //}
 
-            //if (xtraTabbedMdiManager1.Pages.Count == 0)
-            //{
-            //    this.efPanel1.Visible = true;
-            //    this.Text = EC.UserConfig.Instance.CurrentCulture.ProjectFullName;
-            //    //2010-11-30 wegfei 关闭所有tab页后工具栏按钮不可用
-            //    this.ToolbarNew.Enabled = false;
-            //    this.ToolbarAddCopy.Enabled = false;
-            //    this.ToolbarDelete.Enabled = false;
-            //    this.ToolbarSaveAll.Enabled = false;
-            //}
+            if (xtraTabbedMdiManager1.Pages.Count == 0)
+            {
+                this.efPanel1.Visible = true;
+            }
         }
         /// <summary>
         /// Tab页上的右键菜单
@@ -152,6 +156,12 @@ namespace Plat
             //{
             //    this.barStaticItem1.Caption = EP.EPEP.EPEPC0000015/*就绪*/;
             //}
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            DateTime srvTimeNow = System.DateTime.Now  ;
+            this.barStaticItemServerTime.Caption = srvTimeNow.ToString("yyyy-MM-dd hh:mm:ss");
         }
 
 

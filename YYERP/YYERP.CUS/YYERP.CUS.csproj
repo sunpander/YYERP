@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28E5A673-F7EA-4E93-9F60-0134326D8A25}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YYERP.CUS</RootNamespace>
+    <AssemblyName>YYERP.CUS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=197ea8a807d237ae, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.6.0, Culture=neutral, PublicKeyToken=197ea8a807d237ae, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=197ea8a807d237ae, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=197ea8a807d237ae, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=197ea8a807d237ae, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=197ea8a807d237ae, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=197ea8a807d237ae, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppContanst.cs" />
+    <Compile Include="FormCardBrandDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCardBrandDetail.Designer.cs">
+      <DependentUpon>FormCardBrandDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCardCategoryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCardCategoryDetail.Designer.cs">
+      <DependentUpon>FormCardCategoryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCardGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCardGoods.Designer.cs">
+      <DependentUpon>FormCardGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCardValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCardValue.Designer.cs">
+      <DependentUpon>FormCardValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="service\ServiceCardBrand.cs" />
+    <Compile Include="service\ServiceCardCategory.cs" />
+    <Compile Include="service\ServiceCardValue.cs" />
+    <Compile Include="yyerpDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>yyerpDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormCardBrandDetail.resx">
+      <DependentUpon>FormCardBrandDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCardCategoryDetail.resx">
+      <DependentUpon>FormCardCategoryDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCardGoods.resx">
+      <DependentUpon>FormCardGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetBase+bas_brandDataTable.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetBase+bas_brandRow.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetBase+bas_brandRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetBase+bas_brandRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetBase+vw_sec_userDataTable.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetBase+vw_sec_userRow.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetBase+vw_sec_userRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetBase+vw_sec_userRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetBase.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetCus+cus_brandDataTable.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetCus+cus_brandRow.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetCus+cus_brandRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetCus+cus_brandRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetCus+cus_cardDataTable.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetCus+cus_cardRow.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetCus+cus_cardRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetCus+cus_cardRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetCus+cus_goods_packageDataTable.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetCus+cus_goods_packageRow.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetCus+cus_goods_packageRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetCus+cus_goods_packageRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetCus+cus_valueDataTable.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetCus+cus_valueRow.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetCus+cus_valueRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetCus+cus_valueRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\YYERP.DbTable.DataSetCus.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="yyerpDataSet.xsc">
+      <DependentUpon>yyerpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="yyerpDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>yyerpDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="yyerpDataSet.xss">
+      <DependentUpon>yyerpDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DbAccess\DbAccess.csproj">
+      <Project>{918A99B2-120F-4BAC-A813-30C4AD9E6995}</Project>
+      <Name>DbAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YYERP.Common.UI\YYERP.Common.UI.csproj">
+      <Project>{17943372-6663-4C61-92C8-6948378265B2}</Project>
+      <Name>YYERP.Common.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YYERP.DbTable\YYERP.DbTable.csproj">
+      <Project>{60144339-E620-482E-8610-7CFA63220896}</Project>
+      <Name>YYERP.DbTable</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -17,7 +17,11 @@ namespace Plat
 
             try
             {
-                FormLogin.Startup();
+                Application.EnableVisualStyles();
+                FormLogin epLogin = new FormLogin();
+                Application.Run(epLogin);
+               
+
             }
             catch (Exception e)
             {
